@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "EmployeeIndex";
+}
+
+@model List<Employees>
+<h1>Employee Index</h1>
+
+<table class="table table-success">
+    <tr>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Home Phone</th>
+    </tr>
+    @foreach (var employee in Model)
+    {
+        <tr>
+            <td>@employee.LastName</td>
+            <td>@employee.FirstName</td>
+            <td>@employee.HomePhone</td>
+        </tr>
+    }
+</table>
+
+<a href="/Northwind/EmployeeForm">Gooooo add a new Employee!</a>

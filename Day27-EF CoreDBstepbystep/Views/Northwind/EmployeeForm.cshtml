@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "EmployeeForm";
+}
+
+<h1>Employee Form</h1>
+
+<form action="/Northwind/AddEmployee" method="post">
+    <input type="text" name="EmployeeId" placeholder="Id" />
+    <input type="text" name="LastName" placeholder="Last Name" />
+    <input type="text" name="ContactName" placeholder="Contact Name" />
+
+    <input type="text" name="Title" placeholder="Title" />
+    <input type="text" name="TitleOfCourtesy" placeholder="Title of Courtesy" />
+
+    <input type="text" name="BirthDate" placeholder="DOB" />
+    <input type="text" name="HireDate" placeholder="Date of Hire" />
+
+    <input type="text" name="Address" placeholder="Address" />
+    <input type="text" name="City" placeholder="City" />
+    <input type="text" name="Region" placeholder="Region" />
+    <input type="text" name="PostalCode" placeholder="Zip" />
+    <input type="text" name="Country" placeholder="Country" />
+    <input type="text" name="HomePhone" placeholder="Home Phone" />
+    <input type="text" name="Extension" placeholder="Extension" />
+
+    <input type="text" name="Photo" placeholder="Photo" />
+    <input type="text" name="Notes" placeholder="Notes" />
+    <input type="text" name="ReportsTo" placeholder="ReportsTo" />
+    <input type="text" name="PhotoPath" placeholder="Photo" />
+
+    <input type="submit" value="Add that new employee!" />
+
+</form>
